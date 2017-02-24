@@ -1,0 +1,51 @@
+body{
+background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+font-family: 'Raleway', sans-serif;
+background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+.card{
+    background: rgba(0,0,0,0.12);
+    border-radius: 3px;
+    width: 690px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px;
+    margin-top: 10%;
+    color: #ddd;
+    /*border: 1px rgba(0,0,0, 0.08) solid;*/
+     border-right: 1px solid #38678B;
+ border-bottom: 1px solid #38678B;
+ border-left: 1px solid #24435B;
+ border-top: 1px solid #24435B;
+-webkit-box-shadow: inset 1px 1px 1px 0px rgba(0,0,0,0.09);
+-moz-box-shadow: inset 1px 1px 1px 0px rgba(0,0,0,0.09);
+box-shadow: inset 1px 1px 1px 0px rgba(0,0,0,0.09);
+height: 200px;
+}
+.quote{
+    font-size: 144%;
+    /*text-shadow: 0 0 1px black;*/
+}
+h2{
+
+}
+h1{
+    color: #E0E0E0;
+    margin-left: 1%;
+}
+.author{
+ float: left;   
+}
+.source{
+    text-decoration: none;
+    color: #c2d2ea;
+    float: right;
+}
+.source:hover{
+    text-decoration: underline;
+}
+.bottom{
+    position: relative;
+    top: 27%;
+}
