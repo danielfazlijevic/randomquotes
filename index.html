@@ -5,19 +5,38 @@
     <link href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css' rel='stylesheet'>
     <link href='style.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet'>
 </head>
 <body>
 <h1> Random Quotes<span style='font-size: 60%;color: #ddd; margin-left: 4px;font-style: italic;'>v1.0</span></h1>
 
 <div class='card'>
-<h2> A random design quote for you </h2>
+<h4> A random design quote for you...</h4>
 <blockquote>
 
 <p class='quote'>" Stop. I&#8217;m not going to take any more input until I&#8217;ve made something with what I got. "</p>
-<cite class='<author></author>'>Daniel Fazlijevic</cite>
+<cite class='author'>Daniel Fazlijevic</cite>
 </blockquote>
-<a class='source bottom' href='#'>Source</a>
+<div class='bottom'>
+<a class='source clearfix' href='#'>Source</a>
+<span id='next' class='clearfix'>Another!</span>
 </div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script>
+
+    const url = 'http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp';
+function newQuote(){    $.getJSON( url, function( response ) {
+$('.quote').text(response.content);
+console.log(response);
+});
+}
+    
+    
+    </script> 
 
 </body>
 </html>
